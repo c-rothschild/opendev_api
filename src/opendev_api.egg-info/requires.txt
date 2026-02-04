@@ -1,3 +1,4 @@
+dotenv>=0.9.9
 duckdb>=1.4.4
 pandas>=3.0.0
 requests>=2.32.5

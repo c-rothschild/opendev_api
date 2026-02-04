@@ -4,6 +4,7 @@ Version: 0.1.0
 Summary: python package for working with opendev data
 Requires-Python: >=3.13
 Description-Content-Type: text/markdown
+Requires-Dist: dotenv>=0.9.9
 Requires-Dist: duckdb>=1.4.4
 Requires-Dist: pandas>=3.0.0
 Requires-Dist: requests>=2.32.5

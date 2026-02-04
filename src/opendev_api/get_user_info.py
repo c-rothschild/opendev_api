@@ -6,6 +6,20 @@ import duckdb
 
 def create_user_info_table(conn, github_token):
 
+    # create table
+    conn.execute("""
+        CREATE TABLE IF NOT EXISTS user_info (
+            canonical_developer_id INTEGER PRIMARY KEY,
+            login VARCHAR,
+            name VARCHAR,
+            company VARCHAR,
+            location VARCHAR,
+            url VARCHAR,
+            email VARCHAR,
+            primary_github_user_id VARCHAR
+        )
+    """)
+
     # Get GitHub API token
     if not github_token:
         raise ValueError("GITHUB_TOKEN environment variable not set")

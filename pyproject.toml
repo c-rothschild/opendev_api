@@ -5,6 +5,7 @@ description = "python package for working with opendev data"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "dotenv>=0.9.9",
     "duckdb>=1.4.4",
     "pandas>=3.0.0",
     "requests>=2.32.5",
