@@ -1,0 +1,22 @@
+[project]
+name = "opendev-api"
+version = "0.1.0"
+description = "python package for working with opendev data"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.4.4",
+    "pandas>=3.0.0",
+    "requests>=2.32.5",
+    "tqdm>=4.67.3",
+]
+
+[tool.uv.workspace]
+members = ["opendev-api"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: opendev-api
+Version: 0.1.0
+Summary: python package for working with opendev data
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: duckdb>=1.4.4
+Requires-Dist: pandas>=3.0.0
+Requires-Dist: requests>=2.32.5
+Requires-Dist: tqdm>=4.67.3
+
+# API for data from [opendevdata.org](https://opendevdata.org/)
+
+## Features
+WIP
