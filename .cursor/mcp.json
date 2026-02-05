@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+      "duckdb-local": {
+        "command": "uvx",
+        "args": [
+          "mcp-server-duckdb",
+          "--db-path",
+          "/Users/charlierothschild/Desktop/internship_projects/opendev-api/data/odd.duckdb"
+        ]
+      }
+    }
+  }
