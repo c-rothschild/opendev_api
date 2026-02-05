@@ -81,6 +81,34 @@ uv run pytest tests/ -v
 
 Tests use an in-memory DuckDB with minimal schema and seed data (see `tests/conftest.py`). No real database file is required.
 
+## Developer Dashboard (UI)
+
+A Streamlit app lets you explore ecosystems and developers in the browser.
+
+**Install dashboard dependencies:**
+
+```bash
+uv sync --extra dashboard
+```
+
+**Run the dashboard** (from project root; ensure `data/odd.duckdb` exists or set env):
+
+```bash
+uv run streamlit run app/dashboard.py
+```
+
+Optional env vars:
+
+- `OPENDEV_DATA_FOLDER` — folder containing the DuckDB file (default: `./data`)
+- `OPENDEV_DB_FILENAME` — database filename (default: `odd.duckdb`)
+
+The UI includes:
+
+- **Sidebar:** Search and select an ecosystem
+- **Overview tab:** Ecosystem info, latest MADs, parent/child hierarchy, and a 90-day activity chart (all devs + commits)
+- **Repos tab:** Table of repos in the ecosystem (with optional recursive repos)
+- **Developers tab:** Table of developers (filter by contribution rank: full_time / part_time / one_time), plus a developer profile panel (user_info, locations, recent activity, tenure) when you select a developer
+
 ## TODO
 
 - Interactive contribution network (navigate through repos and users to find who contributes to what)
