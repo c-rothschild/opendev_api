@@ -9,8 +9,19 @@ Requires-Dist: duckdb>=1.4.4
 Requires-Dist: pandas>=3.0.0
 Requires-Dist: requests>=2.32.5
 Requires-Dist: tqdm>=4.67.3
+Provides-Extra: test
+Requires-Dist: pytest>=8.0.0; extra == "test"
 
 # API for data from [opendevdata.org](https://opendevdata.org/)
 
 ## Features
-WIP
+
+**get user info:** Get available github info for all active devs in canonical_developers.parquet
+
+
+## TODO
+
+Inderactive contribution network (navigate through repos and users to find who contributes to what)
+
+Developer Dashboard - page showing developer contributions across ecosystems and repos over time
+

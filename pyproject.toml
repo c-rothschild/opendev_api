@@ -19,5 +19,12 @@ members = ["opendev-api"]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
+[project.optional-dependencies]
+test = ["pytest>=8.0.0"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

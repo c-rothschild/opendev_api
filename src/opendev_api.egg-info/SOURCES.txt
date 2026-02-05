@@ -1,10 +1,16 @@
 README.md
 pyproject.toml
 src/opendev_api/__init__.py
+src/opendev_api/_db_utils.py
 src/opendev_api/client.py
+src/opendev_api/developers.py
+src/opendev_api/ecosystems.py
 src/opendev_api/get_user_info.py
 src/opendev_api.egg-info/PKG-INFO
 src/opendev_api.egg-info/SOURCES.txt
 src/opendev_api.egg-info/dependency_links.txt
 src/opendev_api.egg-info/requires.txt
 src/opendev_api.egg-info/top_level.txt
+tests/test_client.py
+tests/test_developers.py
+tests/test_ecosystems.py
